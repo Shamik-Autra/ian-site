@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Vijayendran's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .dark-mode-bg {
+            background-color: #1a202c; /* Darker shade for the background */
+            color: white; /* White color for text in dark mode */
+        }
+        .dark-mode-header {
+            background-color: #2d3748; /* Darker shade for the header */
+        }
+        .dark-mode-section {
+            background-color: #2d3748; /* Darker background for sections */
+        }
+        .dark-mode-text {
+            color: white; /* White color for text */
+        }
+        .dark-mode-link:hover {
+            color: #63b3ed; /* Hover color for links in dark mode */
+        }
+    </style>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 transition-colors duration-500">
+
+    <!-- Header -->
+    <header class="bg-blue-700 text-white p-4 shadow-md mt-4 transition-colors duration-500 dark:dark-mode-header">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Ian Vijayendran</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#biography" class="hover:text-gray-300 dark:dark-mode-text">Biography</a></li>
+                    <li><a href="#favorite-foods" class="hover:text-gray-300 dark:dark-mode-text">Favorite Foods</a></li>
+                    <li><a href="#hobbies" class="hover:text-gray-300 dark:dark-mode-text">Hobbies</a></li>
+                    <li><a href="#sports-teams" class="hover:text-gray-300 dark:dark-mode-text">Sports Teams</a></li>
+                    <li><a href="#school-activities" class="hover:text-gray-300 dark:dark-mode-text">School Activities</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300 dark:dark-mode-text">Contact</a></li>
+                    <li><a href="cluckin'good.html" class="hover:text-gray-300 dark:dark-mode-text">SITES I MADE IN AUTRA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dark Mode Toggle -->
+    <div class="container mx-auto mt-4">
+        <button id="dark-mode-toggle" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md transition-colors duration-500">
+            Toggle Dark Mode
+        </button>
+    </div>
+
+    <!-- Sites I Made in Autra Section -->
+    <section class="bg-white p-4 rounded-lg shadow-md mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 dark:dark-mode-text">SITES I MADE IN AUTRA</h2>
+        <ul class="list-disc pl-5 text-gray-700 dark:dark-mode-text">
+            <li><a href="cluckin'good.html" class="text-blue-500 hover:text-blue-700 dark:dark-mode-text">Cluckin' Good Restaurant Page</a></li>
+        </ul>
+    </section>
+
+    <!-- Biography Section -->
+    <section id="biography" class="bg-white p-8 rounded-lg shadow-lg mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <div class="flex items-center mb-4">
+            <img src="profile pic.jpg" alt="Profile Picture" class="w-24 h-24 rounded-full object-cover border-4 border-blue-700 dark:border-blue-300 mr-4">
+            <div>
+                <h2 class="text-2xl font-bold text-blue-700 dark:dark-mode-text">Biography</h2>
+                <p class="text-gray-700 dark:dark-mode-text">Hello, my name is Ian. I am 11 years old and in grade 6.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorite Foods Section -->
+    <section id="favorite-foods" class="bg-white p-8 rounded-lg shadow-lg mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 dark:dark-mode-text">Favorite Foods</h2>
+        <div class="bg-blue-200 p-4 rounded-lg dark:bg-blue-900">
+            <ul class="list-disc pl-5 text-gray-700 dark:dark-mode-text">
+                <li>Sushi</li>
+                <li>Mexican</li>
+                <li>American</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="bg-white p-8 rounded-lg shadow-lg mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 dark:dark-mode-text">Hobbies</h2>
+        <div class="bg-blue-200 p-4 rounded-lg dark:bg-blue-900">
+            <ul class="list-disc pl-5 text-gray-700 dark:dark-mode-text">
+                <li>Video games</li>
+                <li>Basketball</li>
+                <li>Saxophone</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sports Teams Section -->
+    <section id="sports-teams" class="bg-white p-8 rounded-lg shadow-lg mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 dark:dark-mode-text">Sports Teams</h2>
+        <div class="bg-blue-200 p-4 rounded-lg dark:bg-blue-900">
+            <ul class="list-disc pl-5 text-gray-700 dark:dark-mode-text">
+                <li>Los Angeles Lakers</li>
+                <li>San Diego Padres</li>
+                <li>SDSU Aztecs (Basketball)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- School Activities Section -->
+    <section id="school-activities" class="bg-white p-8 rounded-lg shadow-lg mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 dark:dark-mode-text">School Activities</h2>
+        <div class="bg-blue-200 p-4 rounded-lg dark:bg-blue-900">
+            <p class="text-gray-700 dark:dark-mode-text">Basketball</p>
+        </div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo-list" class="bg-white p-8 rounded-lg shadow-lg mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 dark:dark-mode-text">To-Do List</h2>
+        <div class="bg-blue-200 p-4 rounded-lg dark:bg-blue-900">
+            <ul id="todo-items" class="list-disc pl-5 text-gray-700 dark:dark-mode-text">
+                <li><input type="checkbox" id="todo1"> <label for="todo1" class="dark:dark-mode-text">Got it</label></li>
+                <li><input type="checkbox" id="todo2"> <label for="todo2" class="dark:dark-mode-text">Camp</label></li>
+                <li><input type="checkbox" id="todo3"> <label for="todo3" class="dark:dark-mode-text">Have lunch</label></li>
+                <li><input type="checkbox" id="todo4"> <label for="todo4" class="dark:dark-mode-text">Go home</label></li>
+            </ul>
+            <form id="todo-form" class="mt-4">
+                <input type="text" id="new-todo" class="border p-2 rounded w-full text-black dark:bg-gray-700 dark:text-gray-200" placeholder="Add a new to-do item">
+                <button type="submit" class="mt-2 bg-blue-700 text-white px-4 py-2 rounded-md dark:bg-blue-900">Add</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="bg-white p-8 rounded-lg shadow-lg mt-8 container mx-auto transition-colors duration-500 dark:dark-mode-section">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 dark:dark-mode-text">Contact</h2>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 dark:dark-mode-text">Name</label>
+                <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:text-gray-200">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 dark:dark-mode-text">Email</label>
+                <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:text-gray-200">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 dark:dark-mode-text">Message</label>
+                <textarea id="message" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:text-gray-200"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded-lg dark:bg-blue-900">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white p-4 mt-8 transition-colors duration-500 dark:dark-mode-header">
+        <div class="container mx-auto text-center dark:dark-mode-text">
+            &copy; 2024 Ian Vijayendran. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Basic JavaScript Setup -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            toggleButton.addEventListener('click', () => {
+                body.classList.toggle('dark-mode-bg');
+                document.querySelectorAll('header, footer').forEach(element => element.classList.toggle('dark-mode-header'));
+                document.querySelectorAll('section').forEach(element => element.classList.toggle('dark-mode-section'));
+                document.querySelectorAll('.dark-mode-text').forEach(element => element.classList.toggle('text-white'));
+            });
+
+            const todoForm = document.getElementById('todo-form');
+            const todoInput = document.getElementById('new-todo');
+            const todoItems = document.getElementById('todo-items');
+
+            todoForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const newTodoText = todoInput.value.trim();
+                if (newTodoText !== '') {
+                    const newTodoItem = document.createElement('li');
+                    newTodoItem.classList.add('dark:dark-mode-text');
+                    newTodoItem.innerHTML = `<input type="checkbox"> <label>${newTodoText}</label>`;
+                    todoItems.appendChild(newTodoItem);
+                    todoInput.value = ''; // Clear the input field
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
