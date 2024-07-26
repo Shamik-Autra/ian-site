@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluckin' Good</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rock+Salt&family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fredoka One', cursive;
+        }
+        header h1 {
+            font-family: 'Rock Salt', cursive;
+            font-size: 3rem;
+        }
+        .menu-item h3 {
+            font-family: 'Fredoka One', cursive;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .order-button {
+            background-color: #ff6b6b;
+        }
+        .order-button:hover {
+            background-color: #ff4757;
+        }
+        .menu-image {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-yellow-500 text-white p-6 flex flex-col items-center">
+        <img src="image.png" alt="Cluckin' Good Logo" class="w-40 h-auto mb-4">
+        <h1 class="text-center">Cluckin' Good</h1>
+        <p class="text-lg text-center">The best chicken in town! Come for the food, stay for the fun!</p>
+    </header>
+
+    <main class="p-6">
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="menu-item bg-white p-4 rounded shadow transition-transform duration-300">
+                    <img src="chicken_tenders.jpg" alt="Chicken Tenders and Fries" class="menu-image mb-4">
+                    <h3 class="text-xl font-bold text-yellow-600">Chicken Tenders and Fries</h3>
+                    <p>Delicious chicken tenders served with crispy fries.</p>
+                    <button class="order-button mt-4 px-4 py-2 text-white rounded hover:shadow-lg transition-transform duration-300">Order Now</button>
+                </div>
+                <div class="menu-item bg-white p-4 rounded shadow transition-transform duration-300">
+                    <img src="chicken_tenders_meal.jpg" alt="Chicken Tenders Meal" class="menu-image mb-4">
+                    <h3 class="text-xl font-bold text-yellow-600">Chicken Tenders Meal</h3>
+                    <p>Includes 3 chicken tenders, fries, and toast.</p>
+                    <button class="order-button mt-4 px-4 py-2 text-white rounded hover:shadow-lg transition-transform duration-300">Order Now</button>
+                </div>
+                <div class="menu-item bg-white p-4 rounded shadow transition-transform duration-300">
+                    <img src="chicken_burger.jpg" alt="Chicken Burger" class="menu-image mb-4">
+                    <h3 class="text-xl font-bold text-yellow-600">Chicken Burger</h3>
+                    <p>A juicy chicken burger with all the fixings.</p>
+                    <button class="order-button mt-4 px-4 py-2 text-white rounded hover:shadow-lg transition-transform duration-300">Order Now</button>
+                </div>
+                <div class="menu-item bg-white p-4 rounded shadow transition-transform duration-300">
+                    <img src="drinks.jpg" alt="Drinks" class="menu-image mb-4">
+                    <h3 class="text-xl font-bold text-yellow-600">Drinks</h3>
+                    <p>Refreshing beverages to accompany your meal.</p>
+                    <button class="order-button mt-4 px-4 py-2 text-white rounded hover:shadow-lg transition-transform duration-300">Order Now</button>
+                </div>
+                <div class="menu-item bg-white p-4 rounded shadow transition-transform duration-300">
+                    <img src="special_sauce.jpg" alt="Special Sauce" class="menu-image mb-4">
+                    <h3 class="text-xl font-bold text-yellow-600">Special Sauce</h3>
+                    <p>Our unique and tasty special sauce.</p>
+                    <button class="order-button mt-4 px-4 py-2 text-white rounded hover:shadow-lg transition-transform duration-300">Order Now</button>
+                </div>
+                <div class="menu-item bg-white p-4 rounded shadow transition-transform duration-300">
+                    <img src="kids_meal.jpg" alt="Kids' Meal" class="menu-image mb-4">
+                    <h3 class="text-xl font-bold text-yellow-600">Kids' Meal</h3>
+                    <p>Includes 2 chicken tenders, fries, and a small drink.</p>
+                    <button class="order-button mt-4 px-4 py-2 text-white rounded hover:shadow-lg transition-transform duration-300">Order Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-yellow-500 text-white text-center p-4">
+        <p>&copy; 2024 Cluckin' Good. All rights reserved.</p>
+    </footer>
+</body>
+</html>

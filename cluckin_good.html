@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluckin' Good</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #E5E7EB; /* Light gray background */
+            color: #333; /* Dark text for better contrast */
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem; /* Reduced padding */
+            background-color: #F59E0B; /* Amber */
+            color: #FFFFFF;
+            position: relative;
+        }
+        .header-text {
+            position: absolute;
+            left: 1rem; /* Adjusted for smaller header */
+            font-size: 1rem; /* Slightly smaller text size */
+            font-weight: 700;
+        }
+        .logo img {
+            width: 150px; /* Smaller logo size */
+            height: auto;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 0.5rem; /* Reduced gap between buttons */
+            position: absolute;
+            right: 1rem; /* Adjusted for smaller header */
+        }
+        .nav-buttons a {
+            font-family: 'Playfair Display', serif;
+            background-color: #D97706;
+            padding: 0.3rem 0.8rem; /* Smaller padding for buttons */
+            border-radius: 0.5rem;
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .nav-buttons a:hover {
+            background-color: #B45309; /* Darker shade on hover */
+            transform: translateY(-2px);
+        }
+        .menu-item {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden; /* Ensures content stays within the bounds */
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .menu-image-box {
+            width: 100%;
+            height: 200px; /* Fixed height to contain image */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+        .menu-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Ensure image is fully visible */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-item:hover .menu-image {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .menu-description {
+            margin: 1rem;
+        }
+        .order-button {
+            background-color: #D97706; /* Darker Amber */
+            border: 2px solid transparent;
+            transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            color: white;
+            display: block;
+            text-align: center;
+        }
+        .order-button:hover {
+            background-color: #B45309; /* Darker shade on hover */
+            transform: translateY(-2px);
+            border-color: #fff;
+        }
+        .allergy-info {
+            background-color: #FFF3CD; /* Light yellow background for allergy info */
+            border: 1px solid #FFEEBA; /* Light yellow border */
+            padding: 1rem;
+            margin: 2rem 0;
+            border-radius: 0.5rem;
+            color: #856404; /* Dark yellow text */
+        }
+        footer {
+            background-color: #D97706; /* Amber darker shade */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">Est. 1772</div>
+        <div class="logo">
+            <img src="main logo.png" alt="Cluckin' Good Logo">
+        </div>
+        <div class="nav-buttons">
+            <a href="#menu">Menu</a>
+            <a href="https://ian-site.netlify.app" target="_blank">About Us</a>
+            <a href="https://www.google.com/maps/place/Cluckin+Good" target="_blank">Location</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <main class="p-6" id="menu">
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-emerald-700">Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="menu-item rounded shadow transition-transform duration-300">
+                    <div class="menu-image-box">
+                        <img src="chicks_plate.png" alt="Spicy Chicken" class="menu-image">
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-600 mt-4 text-center">Cluckin' Spicy</h3>
+                    <p class="menu-description text-center">Delicious 2,500 scoville unit chicken tenders served with jalapeño sauce, crispy fries, a drink of your choice, and signature Cluckin' Sauce.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item rounded shadow transition-transform duration-300">
+                    <div class="menu-image-box">
+                        <img src="kendrick.jpg" alt="Chicken Tenders Meal" class="menu-image">
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-600 mt-4 text-center">Cluckin' Tenders</h3>
+                    <p class="menu-description text-center">Includes 5 chicken tenders, fries, toast, a drink of your choice, and our signature Cluckin' Sauce.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item rounded shadow transition-transform duration-300">
+                    <div class="menu-image-box">
+                        <img src="that chicken.jpg" alt="Chicken Burger" class="menu-image">
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-600 mt-4 text-center">Cluckin' Sandwich</h3>
+                    <p class="menu-description text-center">A juicy chicken sandwich with toppings of your choice, fries, a drink of your choice, and our signature Cluckin' Sauce.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item rounded shadow transition-transform duration-300">
+                    <div class="menu-image-box">
+                        <img src="DRANK.png" alt="Drinks" class="menu-image">
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-600 mt-4 text-center">Cluckin' Thirst</h3>
+                    <p class="menu-description text-center">Refreshing beverages to accompany your meal.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item rounded shadow transition-transform duration-300">
+                    <div class="menu-image-box">
+                        <img src="that sauce.jpg" alt="Special Sauce" class="menu-image">
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-600 mt-4 text-center">Cluckin' Sauce</h3>
+                    <p class="menu-description text-center">Our unique and tangy, sweet, delicious special sauce.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item rounded shadow transition-transform duration-300">
+                    <div class="menu-image-box">
+                        <img src="Drake.png" alt="Cluckin' Kiddos" class="menu-image">
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-600 mt-4 text-center">Kids' Meal</h3>
+                    <p class="menu-description text-center">Includes 2 chicken tenders, fries, toast, any choice of sauce, juice, milk, or a small drink.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="allergy-info">
+            <h3 class="text-2xl font-bold mb-4">Allergy Information</h3>
+            <p>Please be aware that our food may contain or come into contact with common allergens, including wheat, soy, and dairy. We also fry some of our product in canola oil. If you have any food allergies or dietary restrictions, please inform us before placing your order. We will do our best to accommodate your needs, but cross-contamination is always a possibility. Your health and safety are important to us!</p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2024 Cluckin' Good. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:info@cluckingood.com">info@cluckingood.com</a></p>
+    </footer>
+</body>
+</html>
